@@ -16,7 +16,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/text_view_p1"
             android:text="Player 1: 0"
-            android:textSize="30sp">
+            android:textSize="30sp"
+            android:freezesText="true">
         </TextView>
 
         <TextView
@@ -25,7 +26,8 @@
             android:layout_below="@+id/text_view_p1"
             android:id="@+id/text_view_p2"
             android:text="Player 2: 0"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:freezesText="true"/>
 
         <Button
             android:id="@+id/button_reset"
@@ -34,7 +36,8 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="33dp"
-            android:text="reset"/>
+            android:text="reset"
+            />
 
 
     </RelativeLayout>
@@ -49,21 +52,27 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_00"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+        />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_01"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+        />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_02"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+        />
 
 
 
@@ -79,21 +88,27 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_10"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_11"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_12"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+
 
 
 
@@ -109,21 +124,27 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_20"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_21"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/button_22"
-            android:textSize="60sp"/>
+            android:textSize="60sp"
+            android:freezesText="true"/>
+
 
 
 

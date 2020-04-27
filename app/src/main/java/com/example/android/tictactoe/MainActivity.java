@@ -1,5 +1,6 @@
 package com.example.android.tictactoe;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                resetGame();
 
             }
         });
@@ -155,4 +158,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         player1Turn = true;
     }
 
+    private void resetGame(){
+        player1Point = 0;
+        player2Point = 0;
+        updatePointsText();
+        resetBoard();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("roundCount", roundCount);
+        outState.putInt("player1Points", player1Point);
+        outState.putInt("player2Points", player2Point);
+        outState.putBoolean("player1Turn", player1Turn);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        roundCount = savedInstanceState.getInt("roundCount");
+        player1Point = savedInstanceState.getInt("player1Points");
+        player2Point = savedInstanceState.getInt("player2points");
+        player1Turn = savedInstanceState.getBoolean("Player1Turn");
+    }
 }
